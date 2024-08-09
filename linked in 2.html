@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:lightsteelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: beige;
+            padding: 20px;
+            border-radius: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 700px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+         .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 100px;;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color:palevioletred;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Join LinkedIn</h2>
+        <form action="teju.html" method="POST">
+            <div class="form-group">
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="country">Country*</label><br>
+                    <select name="country" id="country" required>
+                        <option value="">United states</option>
+                        <option value="">Brazil</option>
+                        <option value="">Canada</option>
+                        <option value="">Germany</option>
+                        <option value="">India</option>
+                        <option value="">United kingdom</option>
+                    </select>
+                </div>
+                <br>
+                    <div>
+                        <div clas="form-group">
+                        <label for="dob">Date of Birth*</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <br>
+                    <div>
+                        <div clas="form-group"></div>
+                        <label for="zipcode">Zipcode*</label><br>
+                        <input type="zipcode" name="zipcode" id="zipcode">
+                    </div>
+                    <br>
+                <div>
+                  <div class="form-group">
+                <label for="email">Email or phonenumber*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <p>Are you a Student?</p>
+                Yes <input type="radio" name="recommend" value="yes">
+                No <input type="radio" name="recommend" value="no">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Create your profile">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Account Deactivation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .submit-btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Instagram Account Deactivation Form</h2>
+    <form action="/submit_deactivation" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="reason">Reason for Deactivation:</label>
+        <select id="reason" name="reason" required>
+            <option value="privacy-concerns">Privacy Concerns</option>
+            <option value="too-distracting">Too Distracting</option>
+            <option value="created-another-account">Created Another Account</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="details">Additional Details (optional):</label>
+        <textarea id="details" name="details"></textarea>
+
+        <label>
+            <input type="checkbox" name="confirmation" required> I confirm that I want to deactivate my Instagram account.
+        </label>
+
+        <button type="submit" class="submit-btn">Deactivate Account</button>
+    </form>
+</div>
+
+</body>
+</html>

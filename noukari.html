@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noukari Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background:lightgoldenrodyellow;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color:blanchedalmond;
+            color:green;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Noukari Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Write your address.." style="height:100px" required></textarea>
+
+        <label for="qualification">Qualification:</label>
+        <input type="text" id="qualification" name="qualification" placeholder="Your qualification.." required>
+
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience" placeholder="Describe your experience.." style="height:100px" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
